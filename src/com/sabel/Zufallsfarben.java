@@ -3,8 +3,8 @@ package com.sabel;
 import javax.swing.*;
 import java.awt.*;
 
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.util.Random;
 
 
@@ -27,21 +27,7 @@ public class Zufallsfarben extends JFrame {
 
         Random r = new Random();
 
-        this.addMouseListener(new MouseListener() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseReleased(MouseEvent e) {
-
-            }
+        this.addMouseListener(new MouseAdapter() {
 
             @Override
             public void mouseEntered(MouseEvent e) {
